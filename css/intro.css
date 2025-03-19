@@ -1,0 +1,48 @@
+.intro-title {
+  font-family: 'Syncopate', sans-serif;
+  font-weight: 10;
+}
+
+.intro-divider {
+  width: 50%;
+  background-color: #E83951;
+  border-color: #E83951;
+}
+
+.social-links a {
+  color: white;
+  font-size: em;
+  margin: 0 10px;
+}
+
+.social-links a:hover {
+  color: #E83951;
+  transition: color 0.3s ease;
+}
+
+.resume-link {
+  color: white;
+}
+
+.resume-link img {
+  height: 35px;
+  width: 35px;
+  vertical-align: middle;
+}
+
+.info-section {
+  margin: 30px 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #ffffff;
+}
+
+.info-section p {
+  margin-bottom: 15px;
+}
+
+.info-section .highlight {
+  color: #E83951;
+  font-weight: bold;
+} 
