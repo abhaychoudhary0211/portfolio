@@ -93,3 +93,12 @@ Contributions, issues, and feature requests are welcome! Feel free to check the 
 ## 📄 License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
+
+## ©️ Rights
+
+Copyright © 2024 Abhay Choudhary. All rights reserved.
+
+---
+Made with 🤍 by Abhay Ghasal
+
+Website: [abhaychoudhary.com](https://abhaychoudhary.com)
