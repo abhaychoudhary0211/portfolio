@@ -1,102 +1,119 @@
 # Abhay Choudhary - Portfolio Website
 
-A modern and interactive portfolio website showcasing my projects, skills, achievements, and professional experience.
+A modern, responsive portfolio website showcasing my work, skills, and achievements. Built with HTML, CSS, and JavaScript.
 
-## 🚀 About Me
+## 🌟 Features
 
-Hi, I'm Abhay Choudhary, a passionate Full Stack Developer based in India. I'm currently pursuing my degree in Computer Science and Engineering. I love building web applications and exploring new technologies. My goal is to create innovative solutions that make a difference.
-
-## 💻 Skills
-
-### Key Skills
-- Python (Basics)
-- C (Basics)
-- MySQL Database
-
-### Software Proficiency
-- Arduino IDE
-- Canva
-- KiCAD
-- Eagle CAD
-
-### Professional Experience
-- PCB Designing
-- 3D Designing & Printing
-- Laser Cutting
-
-## 🏆 Achievements
-
-1. IETE Project Expo Winner (PIET)
-2. Udhbhav'2023 2nd Runners Up (PIET)
-3. Co-Ordinator SIH 2023 Grand Final (PIET)
-4. G20 Project Exhibition (PIET)
-5. Android App Development (Pregrad)
-6. Project Expo 3.0 (Manipal University)
-7. Python Programming (Internshala)
-
-## 📚 Projects
-
-### Software Projects
-- Project Title 1 (React, Node.js, MongoDB)
-- Project Title 2 (Python, Django, PostgreSQL)
-
-### Hardware Projects
-- Project Title 1 (Arduino, Sensors, IoT)
-- Project Title 2 (Raspberry Pi, Python, Electronics)
-
-## 📝 Patents
-- Patent Title 1 (January 2024)
-- Patent Title 2 (February 2024)
-
-## 📞 Contact Information
-
-- **Email:** abhaychoudhary@gmail.com
-- **Phone:** +91 1234567890
-- **Location:** Jaipur, Rajasthan, India
-
-## 🔗 Social Links
-
-- [GitHub](https://github.com/yourusername)
-- [LinkedIn](https://linkedin.com/in/yourusername)
-- [Facebook](https://facebook.com/yourusername)
-- [Discord](https://discord.gg/yourusername)
-- [YouTube](https://youtube.com/yourusername)
-- [Telegram](https://t.me/yourusername)
+- **Responsive Design**: Fully responsive layout that works on all devices
+- **Interactive UI**: Smooth animations and transitions
+- **Particle Background**: Dynamic particle effect background
+- **Mobile Navigation**: Hamburger menu for mobile devices
+- **Sections**:
+  - Home/Introduction
+  - Patents
+  - Projects (Software & Hardware)
+  - Skills
+  - Achievements
+  - Gallery
+  - Contact Information
 
 ## 🛠️ Technologies Used
 
 - HTML5
 - CSS3
 - JavaScript
-- jQuery
-- Font Awesome
-- Particle.js
+- jQuery (for particle effects)
+- Font Awesome Icons
 
-## 📦 Installation
+## 📱 Responsive Breakpoints
+
+- Desktop: > 768px
+- Tablet: ≤ 768px
+- Mobile: ≤ 480px
+
+## 🚀 Getting Started
 
 1. Clone the repository:
-```bash
-git clone https://github.com/yourusername/portfolio.git
-```
+   ```bash
+   git clone https://github.com/abhaychoudhary0211/portfolio.git
+   ```
 
 2. Navigate to the project directory:
-```bash
-cd portfolio
-```
+   ```bash
+   cd portfolio
+   ```
 
 3. Open `index.html` in your web browser or use a local server.
 
-## 🤝 Contributing
+## 📁 Project Structure
 
-Contributions, issues, and feature requests are welcome! Feel free to check the issues page.
+```
+portfolio/
+├── assets/
+│   ├── logo.png
+│   ├── patent1.png
+│   ├── patent2.png
+│   ├── birthday.png
+│   ├── drone.png
+│   ├── 2dplotter.png
+│   └── gallery images/
+├── css/
+│   └── style.css
+├── js/
+│   ├── jquery.particleground.js
+│   └── demo.js
+└── index.html
+```
 
-## 📄 License
+## 🎨 Design Features
+
+- Modern and clean interface
+- Consistent color scheme
+- Smooth scrolling
+- Interactive hover effects
+- Responsive images and cards
+- Custom section headers with decorative lines
+- Loading screen animation
+
+## 📱 Mobile Features
+
+- Collapsible navigation menu
+- Optimized touch targets
+- Responsive grid layouts
+- Adjusted font sizes for readability
+- Touch-friendly hover states
+
+## 🔄 Recent Updates
+
+- Added responsive design for all screen sizes
+- Improved text alignment and spacing
+- Enhanced mobile navigation
+- Optimized image loading
+- Added loading screen animation
+- Updated content and sections
+
+## 📝 License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## ©️ Rights
+## 👤 Author
 
-Copyright © 2024 Abhay Choudhary. All rights reserved.
+Abhay Choudhary
+- Email: abhaychoudhary888888@gmail.com
+- Phone: +91 6378464141
+- Location: Jaipur, Rajasthan, India
 
----
-Made with 🤍 by Abhay Ghasal
+## 🤝 Connect With Me
+
+- [GitHub](https://github.com/abhaychoudhary0211)
+- [LinkedIn](https://www.linkedin.com/in/abhay-choudhary-2b71b4295/)
+- [Facebook](https://www.facebook.com/share/16LVeKwYdp/)
+- [Discord](https://discord.gg/U7jfbFQ6CV)
+- [YouTube](https://youtube.com/@indian_esports_officials)
+- [Telegram](https://t.me/TITANSOFBGMI)
+
+## 📄 Copyright
+
+Copyright © 2025 Abhay Choudhary. All rights reserved.
+
+Made with ❤️ by Abhay Ghasal
