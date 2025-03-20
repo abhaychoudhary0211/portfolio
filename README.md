@@ -100,5 +100,3 @@ Copyright © 2024 Abhay Choudhary. All rights reserved.
 
 ---
 Made with 🤍 by Abhay Ghasal
-
-Website: [abhaychoudhary.com](https://abhaychoudhary.com)
