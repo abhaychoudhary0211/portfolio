@@ -15,7 +15,7 @@
 
 <body>
   Loading Screen
-  <div class="loading-screen">
+  <!-- <div class="loading-screen">
     <div class="loader">
       <div class="loader-text">
         <span data-text="A">A</span>
@@ -25,12 +25,17 @@
         <span data-text="Y">Y</span>
       </div>
     </div>
-  </div>
+  </div> -->
 
   <nav class="navbar">
     <div class="nav-brand">
       <img src="assets/logo.png" alt="Logo" class="nav-logo">
       <span class="nav-name">Abhay Choudhary</span>
+    </div>
+    <div class="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
     <div class="nav-links">
       <a href="#home" class="nav-link">Home</a>
@@ -432,5 +437,34 @@
       <p class="made-with-love">Made with ❤️ by Abhay Ghasal</p>
     </div>
   </footer>
+
+  <script>
+    // Mobile Menu Toggle
+    document.addEventListener('DOMContentLoaded', function() {
+      const menuToggle = document.querySelector('.menu-toggle');
+      const navLinks = document.querySelector('.nav-links');
+      
+      menuToggle.addEventListener('click', function() {
+        menuToggle.classList.toggle('active');
+        navLinks.classList.toggle('active');
+      });
+
+      // Close menu when clicking a link
+      document.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+          menuToggle.classList.remove('active');
+          navLinks.classList.remove('active');
+        });
+      });
+
+      // Close menu when clicking outside
+      document.addEventListener('click', (e) => {
+        if (!menuToggle.contains(e.target) && !navLinks.contains(e.target)) {
+          menuToggle.classList.remove('active');
+          navLinks.classList.remove('active');
+        }
+      });
+    });
+  </script>
 </body>
 </html>

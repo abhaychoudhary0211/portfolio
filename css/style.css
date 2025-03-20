@@ -377,65 +377,189 @@ p {
 }
 
 /* Add styles for the look at my patents text */
-.look-at-patents {
+.look-at-patents,
+.look-at-projects,
+.look-at-skills,
+.look-at-achievements,
+.look-at-gallery,
+.look-at-contact {
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0.5rem 0;
-  gap: 2rem;
-  padding: 0 20px;
+  gap: 1rem;
+  padding: 0 10px;
   background: #000010;
   position: relative;
   z-index: 1;
+  flex-wrap: wrap;
+  text-align: center;
+  width: 100%;
+  min-height: 80px;
 }
 
+.look-at-patents span,
+.look-at-projects span,
+.look-at-skills span,
+.look-at-achievements span,
+.look-at-gallery span,
+.look-at-contact span {
+  font-size: 3rem;
+  white-space: normal;
+  text-align: center;
+  line-height: 1.2;
+  padding: 0 10px;
+  color: #ffffff;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  width: auto;
+  min-width: fit-content;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Special styling for My Skills section */
+.look-at-skills {
+  flex-direction: column;
+  gap: 0.5rem;
+  position: relative;
+}
+
+.look-at-skills::before {
+  content: '';
+  width: 100px;
+  height: 4px;
+  background-color: #007bff;
+  flex-shrink: 0;
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 0.5rem;
+}
+
+.look-at-skills::after {
+  content: '';
+  width: 100px;
+  height: 4px;
+  background-color: #007bff;
+  flex-shrink: 0;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 0.5rem;
+}
+
+.look-at-skills span {
+  margin: 0.5rem 0;
+}
+
+/* Other section headers */
 .look-at-patents::before,
-.look-at-patents::after {
-  content: '';
-  height: 4px;
-  width: 200px;
-  background-color: #007bff;
-}
-
-.look-at-patents span {
-  font-size: 4rem;
-  font-weight: 600;
-  color: #ffffff;
-  white-space: nowrap;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-}
-
-/* Add styles for the look at projects text */
-.look-at-projects {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0.5rem 0;
-  gap: 2rem;
-  padding: 0 20px;
-  background: #000010;
-  position: relative;
-  z-index: 1;
-}
-
+.look-at-patents::after,
 .look-at-projects::before,
-.look-at-projects::after {
+.look-at-projects::after,
+.look-at-achievements::before,
+.look-at-achievements::after,
+.look-at-gallery::before,
+.look-at-gallery::after,
+.look-at-contact::before,
+.look-at-contact::after {
   content: '';
+  width: 100px;
   height: 4px;
-  width: 200px;
   background-color: #007bff;
+  flex-shrink: 0;
+  display: inline-block;
+  vertical-align: middle;
 }
 
-.look-at-projects span {
-  font-size: 4rem;
-  font-weight: 600;
-  color: #ffffff;
-  white-space: nowrap;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+/* Mobile Responsive Adjustments */
+@media screen and (max-width: 768px) {
+  .look-at-patents,
+  .look-at-projects,
+  .look-at-skills,
+  .look-at-achievements,
+  .look-at-gallery,
+  .look-at-contact {
+    min-height: 60px;
+  }
+
+  .look-at-patents span,
+  .look-at-projects span,
+  .look-at-skills span,
+  .look-at-achievements span,
+  .look-at-gallery span,
+  .look-at-contact span {
+    font-size: 2rem;
+    padding: 0 5px;
+    width: auto;
+  }
+
+  .look-at-patents::before,
+  .look-at-patents::after,
+  .look-at-projects::before,
+  .look-at-projects::after,
+  .look-at-skills::before,
+  .look-at-skills::after,
+  .look-at-achievements::before,
+  .look-at-achievements::after,
+  .look-at-gallery::before,
+  .look-at-gallery::after,
+  .look-at-contact::before,
+  .look-at-contact::after {
+    width: 50px;
+    height: 3px;
+  }
+
+  .look-at-skills::before,
+  .look-at-skills::after {
+    width: 50px;
+    height: 3px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .look-at-patents,
+  .look-at-projects,
+  .look-at-skills,
+  .look-at-achievements,
+  .look-at-gallery,
+  .look-at-contact {
+    min-height: 50px;
+  }
+
+  .look-at-patents span,
+  .look-at-projects span,
+  .look-at-skills span,
+  .look-at-achievements span,
+  .look-at-gallery span,
+  .look-at-contact span {
+    font-size: 1.8rem;
+    padding: 0 5px;
+    width: auto;
+  }
+
+  .look-at-patents::before,
+  .look-at-patents::after,
+  .look-at-projects::before,
+  .look-at-projects::after,
+  .look-at-skills::before,
+  .look-at-skills::after,
+  .look-at-achievements::before,
+  .look-at-achievements::after,
+  .look-at-gallery::before,
+  .look-at-gallery::after,
+  .look-at-contact::before,
+  .look-at-contact::after {
+    width: 30px;
+    height: 2px;
+  }
+
+  .look-at-skills::before,
+  .look-at-skills::after {
+    width: 30px;
+    height: 2px;
+  }
 }
 
 /* Projects Section Styles */
@@ -521,68 +645,6 @@ p {
   color: #007bff;
   font-size: 0.9rem;
   text-align: center;
-}
-
-/* Add styles for the look at skills text */
-.look-at-skills {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0.5rem 0;
-  gap: 2rem;
-  padding: 0 20px;
-  background: #000010;
-  position: relative;
-  z-index: 1;
-}
-
-.look-at-skills::before,
-.look-at-skills::after {
-  content: '';
-  height: 4px;
-  width: 200px;
-  background-color: #007bff;
-}
-
-.look-at-skills span {
-  font-size: 4rem;
-  font-weight: 600;
-  color: #ffffff;
-  white-space: nowrap;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-}
-
-/* Add styles for the look at achievements text */
-.look-at-achievements {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0.5rem 0;
-  gap: 2rem;
-  padding: 0 20px;
-  background: #000010;
-  position: relative;
-  z-index: 1;
-}
-
-.look-at-achievements::before,
-.look-at-achievements::after {
-  content: '';
-  height: 4px;
-  width: 200px;
-  background-color: #007bff;
-}
-
-.look-at-achievements span {
-  font-size: 4rem;
-  font-weight: 600;
-  color: #ffffff;
-  white-space: nowrap;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 /* Skills Section Styles */
@@ -682,13 +744,230 @@ p {
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
-  .patents-grid {
-    grid-template-columns: 1fr;
+  /* Navigation */
+  .navbar {
+    padding: 0.8rem 1rem;
   }
 
+  .nav-brand {
+    gap: 0.5rem;
+  }
+
+  .nav-logo {
+    width: 32px;
+    height: 32px;
+  }
+
+  .nav-name {
+    font-size: 1.2rem;
+  }
+
+  .nav-links {
+    display: none; /* Hide on mobile */
+    position: fixed;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 16, 0.95);
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  /* Intro Section */
+  #intro {
+    top: 50%;
+    padding: 0 20px;
+  }
+
+  h2 {
+    font-size: 36px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  /* Section Headers */
+  .look-at-patents span,
+  .look-at-projects span,
+  .look-at-skills span,
+  .look-at-achievements span,
+  .look-at-gallery span,
+  .look-at-contact span {
+    font-size: 2.5rem;
+  }
+
+  .look-at-patents::before,
+  .look-at-patents::after,
+  .look-at-projects::before,
+  .look-at-projects::after,
+  .look-at-skills::before,
+  .look-at-skills::after,
+  .look-at-achievements::before,
+  .look-at-achievements::after,
+  .look-at-gallery::before,
+  .look-at-gallery::after,
+  .look-at-contact::before,
+  .look-at-contact::after {
+    width: 100px;
+  }
+
+  /* Patents Section */
+  .patents-grid {
+    grid-template-columns: 1fr;
+    padding: 0 10px;
+  }
+
+  .patent-card {
+    height: 500px;
+  }
+
+  .patent-image {
+    height: 300px;
+  }
+
+  /* Projects Section */
   .project-cards {
     grid-template-columns: 1fr;
     padding: 0 10px;
+  }
+
+  .project-image {
+    height: 180px;
+  }
+
+  /* Skills Section */
+  .skill-list {
+    grid-template-columns: 1fr;
+    padding: 0 10px;
+  }
+
+  /* Achievements Section */
+  .achievements-grid {
+    grid-template-columns: 1fr;
+    padding: 0 10px;
+  }
+
+  /* Gallery Section */
+  .gallery-grid {
+    grid-template-columns: 1fr;
+    padding: 0 10px;
+  }
+
+  .gallery-item {
+    height: 250px;
+  }
+
+  /* Contact Section */
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 1rem;
+  }
+
+  .contact-item,
+  .social-item {
+    height: 80px;
+    padding: 1rem;
+  }
+
+  .contact-item i,
+  .social-item i {
+    font-size: 1.8rem;
+  }
+
+  .contact-text h4 {
+    font-size: 1.2rem;
+  }
+
+  .contact-text p,
+  .social-item span {
+    font-size: 1rem;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 20px 0;
+  }
+
+  .footer .copyright {
+    font-size: 12px;
+  }
+
+  .footer .made-with-love {
+    font-size: 14px;
+  }
+}
+
+/* Small Mobile Screens */
+@media screen and (max-width: 480px) {
+  h2 {
+    font-size: 28px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .section {
+    padding: 60px 10px;
+  }
+
+  .category-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .patent-card {
+    height: 450px;
+  }
+
+  .patent-image {
+    height: 250px;
+  }
+
+  .gallery-item {
+    height: 200px;
+  }
+}
+
+/* Add Mobile Menu Button */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 25px;
+  height: 2px;
+  background-color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  .menu-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+  }
+
+  .menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
   }
 }
 
@@ -701,6 +980,22 @@ p {
   letter-spacing: 1px;
   width: 100%;
   padding: 0 20px;
+  white-space: normal;
+  line-height: 1.2;
+}
+
+@media screen and (max-width: 768px) {
+  .category-title {
+    font-size: 2.2rem;
+    margin-bottom: 3rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .category-title {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
 }
 
 /* Certificate Link Styles */
@@ -778,25 +1073,47 @@ p {
 }
 
 .look-at-contact span {
-  font-size: 4rem;
-  font-weight: 600;
+  font-size: 3rem;
+  white-space: normal;
+  text-align: center;
+  line-height: 1.2;
+  padding: 0 10px;
   color: #ffffff;
-  white-space: nowrap;
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 2px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  width: auto;
+  min-width: fit-content;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 768px) {
+  .look-at-contact span {
+    font-size: 2rem;
+    padding: 0 5px;
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .look-at-contact span {
+    font-size: 1.8rem;
+    padding: 0 5px;
+    width: auto;
+  }
 }
 
 /* Contact Section Styles */
 .contact-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 4rem;
+  gap: 3rem;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
-  height: 100%;
 }
 
 .contact-info, .social-links {
@@ -804,15 +1121,14 @@ p {
   flex-direction: column;
   align-items: center;
   gap: 2rem;
-  height: 100%;
+  width: 100%;
 }
 
 .contact-details {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1.5rem;
   width: 100%;
-  height: 100%;
 }
 
 .contact-item {
@@ -824,6 +1140,7 @@ p {
   border-radius: 15px;
   transition: transform 0.3s ease;
   height: 100px;
+  width: 100%;
 }
 
 .contact-item:hover {
@@ -832,25 +1149,27 @@ p {
 }
 
 .contact-item i {
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: #007bff;
+  min-width: 40px;
+  text-align: center;
 }
 
 .contact-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100%;
+  flex: 1;
 }
 
 .contact-text h4 {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   color: #ffffff;
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.5rem;
 }
 
 .contact-text p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #cccccc;
 }
 
@@ -859,7 +1178,6 @@ p {
   grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
   width: 100%;
-  height: 100%;
 }
 
 .social-item {
@@ -873,6 +1191,7 @@ p {
   color: #ffffff;
   transition: all 0.3s ease;
   height: 100px;
+  width: 100%;
 }
 
 .social-item:hover {
@@ -882,21 +1201,61 @@ p {
 }
 
 .social-item i {
-  font-size: 2rem;
+  font-size: 1.8rem;
+  min-width: 40px;
+  text-align: center;
 }
 
 .social-item span {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
 }
 
+/* Contact Section Responsive Styles */
 @media screen and (max-width: 768px) {
   .contact-grid {
     grid-template-columns: 1fr;
-    gap: 3rem;
+    gap: 2rem;
+    padding: 1rem;
   }
 
-  .social-grid {
-    grid-template-columns: 1fr;
+  .contact-item, .social-item {
+    height: 80px;
+    padding: 1rem;
+  }
+
+  .contact-item i, .social-item i {
+    font-size: 1.5rem;
+  }
+
+  .contact-text h4 {
+    font-size: 1.1rem;
+  }
+
+  .contact-text p, .social-item span {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contact-grid {
+    padding: 0.5rem;
+  }
+
+  .contact-item, .social-item {
+    height: 70px;
+    padding: 0.8rem;
+  }
+
+  .contact-item i, .social-item i {
+    font-size: 1.3rem;
+  }
+
+  .contact-text h4 {
+    font-size: 1rem;
+  }
+
+  .contact-text p, .social-item span {
+    font-size: 0.8rem;
   }
 }
 
@@ -922,13 +1281,36 @@ p {
 }
 
 .look-at-gallery span {
-  font-size: 4rem;
-  font-weight: 600;
+  font-size: 3rem;
+  white-space: normal;
+  text-align: center;
+  line-height: 1.2;
+  padding: 0 10px;
   color: #ffffff;
-  white-space: nowrap;
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 2px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  width: auto;
+  min-width: fit-content;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 768px) {
+  .look-at-gallery span {
+    font-size: 2rem;
+    padding: 0 5px;
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .look-at-gallery span {
+    font-size: 1.8rem;
+    padding: 0 5px;
+    width: auto;
+  }
 }
 
 /* Gallery Section Styles */
@@ -1052,3 +1434,4 @@ p {
   text-decoration: none;
   transform: translateY(-2px);
 }
+
