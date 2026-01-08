@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://abhaychoudhary0211.github.io/portfolio/sitemap.xml
